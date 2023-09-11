@@ -15,6 +15,6 @@ COPY . .
 RUN python manage.py migrate
 
 # gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8005", "--workers", "3", \
+CMD ["gunicorn", "--bind", "0.0.0.0:5005", "--workers", "3", \
 "--access-logfile", "-", "--log-level", "debug", "--capture-output", \
 "--enable-stdio-inheritance", "core.wsgi"]
