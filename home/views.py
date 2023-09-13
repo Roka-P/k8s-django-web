@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from theme_material_kit.forms import LoginForm, RegistrationForm, UserPasswordResetForm, UserSetPasswordForm, UserPasswordChangeForm
+from home.forms import LoginForm, RegistrationForm, UserPasswordResetForm, UserSetPasswordForm, UserPasswordChangeForm
 from django.contrib.auth import logout
 
 from django.contrib.auth import views as auth_views
