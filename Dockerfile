@@ -9,8 +9,7 @@ COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pwd
-RUN cp -u home/templates/ /usr/local/lib/python3.9/site-packages/theme_material_kit/templates/
+COPY home/templates/ /usr/local/lib/python3.9/site-packages/theme_material_kit/templates/
 
 COPY . .
 
